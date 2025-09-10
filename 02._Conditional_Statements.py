@@ -39,10 +39,33 @@
 # food=input("food: ")
 # print("sweet") if food== "cake" or food== "jalebi" else print("not sweet")
 
-age =int(input("age:"))
-vote=("yes","no")[age<=18] #first value is for when the statement is false and secong for if it is true
-print(vote)
+# age =int(input("age:"))
+# vote=("yes","no")[age<=18] #first value is for when the statement is false and secong for if it is true
+# print(vote)
 
-sal=float(input("salary:"))
-tax=sal*(0.1,0.2)[sal<=5000]
-print(tax)
+# sal=float(input("salary:"))
+# tax=sal*(0.1,0.2)[sal<=5000]
+# print(tax)
+
+a,b=5,2
+print("Arithmetic Operators")
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a%b)#modulo or remainder
+print(a**b)#a^b
+
+print("Relational Operators")
+print(a==b)
+print(a>=b)
+print(a<=b)
+print(a!=b)
+
+print("Logical Operators")
+val1=True
+val2=False
+print("AND Operator: ",val1 and val2)
+print("OR Operator: ",val1 or val2)
+
+print("OR operator:",(a==b)or(a>b))
