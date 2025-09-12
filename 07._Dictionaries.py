@@ -1,28 +1,28 @@
-info = {
-    "key":"value",
-    "name" : "arya",
-    "learning":"coding",
-    "isAdult":True,
-    "marks":94,
-    "subjects":["MAths","Sci","English"],
-    "topics":("dic","set")
+# info = {
+#     "key":"value",
+#     "name" : "arya",
+#     "learning":"coding",
+#     "isAdult":True,
+#     "marks":94,
+#     "subjects":["MAths","Sci","English"],
+#     "topics":("dic","set")
 
-}
-print(info)
-print(info["learning"])
+# }
+# print(info)
+# print(info["learning"])
 
-print(info["name"])
-print(info["marks"])
-info["name"]="Arya"
+# print(info["name"])
+# print(info["marks"])
+# info["name"]="Arya"
 
-info["surname"]="Patil"
-print(info)
+# info["surname"]="Patil"
+# print(info)
 
 
-null_dict={
+# null_dict={
 
-}
-print(null_dict)
+# }
+# print(null_dict)
 
 
 student={
@@ -38,6 +38,7 @@ print(student["subjects"])
 print(student["subjects"]["chem"])
 keyed1=student.keys()
 print(keyed1)
+print(list(student.keys()))
 keyed=student["subjects"].keys()
 print(keyed)
 keyed2=student.values()
@@ -50,3 +51,11 @@ print(keyed4)
 print(keyed5)
 keyed6=student.update()
 
+pairs=list(student.items())
+print(pairs[0])
+print(student["name"])
+print(student.get("name"))
+
+new_dict={"city":"pune","age":19}
+student.update(new_dict)
+print(student)
