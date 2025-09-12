@@ -59,3 +59,10 @@ print(student.get("name"))
 new_dict={"city":"pune","age":19}
 student.update(new_dict)
 print(student)
+
+
+dictr={
+    "table":["a piece of furniture","list of facts or anything possible"],
+    "cat":"Animal"
+}
+print(dictr)
