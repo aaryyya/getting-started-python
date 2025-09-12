@@ -29,3 +29,13 @@ print(set3)
 subjects={"py","j","c++","py","js","py","j","c++","c",}
 lenny=(len(subjects))
 print(lenny)
+
+
+marks={}
+x=input("Enter marks of Physics: ")
+marks.update({"phy":x})
+x=input("Enter marks of Maths: ")
+marks.update({"Maths":x})
+x=input("Enter marks of Chem: ")
+marks.update({"chem":x})
+print(marks)
