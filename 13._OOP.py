@@ -1,4 +1,5 @@
 class Student:
+    name="Channing"
     college="ameowining"
     def __init__(self,name,marks):
         self.name=name
@@ -12,6 +13,8 @@ class Student:
 
 s1= Student("Siya",19)
 s1.welcome()
+print(Student.name)
+print(s1.name)
 print(s1.get_marks())
 
 
