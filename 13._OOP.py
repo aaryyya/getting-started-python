@@ -11,8 +11,11 @@ class Student:
     def get_marks(self):
         return self.marks
 
+    def hi():
+        print("hi")
 s1= Student("Siya",19)
 s1.welcome()
+# s1.hi()
 print(Student.name)
 print(s1.name)
 print(s1.get_marks())

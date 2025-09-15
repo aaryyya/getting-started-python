@@ -25,3 +25,8 @@ def print_list(list):
         print(item,end=" ")#end with space insetead on new line print
 
 print_list(heros)
+
+def printh():
+    print("heloo")
+
+printh()
