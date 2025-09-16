@@ -1,10 +1,12 @@
 # Single Inheritance
 
 class Car:
+    def __init__(self,type):
+        self.type=type
     color="green"
     @staticmethod
     def start():
-        print("car started")
+        print("car started parent")
 
     @staticmethod
     def stop():
@@ -14,6 +16,9 @@ class ToyotaCar(Car):
     def __init__(self,name,brand):
         self.name=name
         self.brand=brand
+        #self.type=type here whichuu have ceatef is of toyota car class and not parent class
+        super().__init__(type)
+        super().start()
 car1=ToyotaCar("fortuner","toyota")
 # car2=ToyotaCar("priss")
 
@@ -42,3 +47,8 @@ c1=C()
 print(c1.varC)
 print(c1.varB)
 print(c1.varA)
+
+
+
+
+# missed commit restoration
