@@ -1,5 +1,15 @@
+row=int(input("ENter row here:"))
+col=int(input("ENter col here:"))
 
-magicmatrix=[[4,5,6],[8,6,9],[7,1,2]]
+magicmatrix=[]
+for i in range (row):
+    temp=[]
+    for j in range (col):
+        temp.append(int(input()))
+    magicmatrix.append(temp)
+print(magicmatrix)
+
+
 rowsum=0
 maxi=0
 for i in range (len(magicmatrix)):
@@ -8,6 +18,19 @@ for i in range (len(magicmatrix)):
         rowsum+=magicmatrix[i][j]
     maxi=max(maxi,rowsum)
 
-print(maxi)
+colsum=0
+maxic=0
+for i in range(len(magicmatrix[0])):
+    colsum=0
+    for j in range (len(magicmatrix)):
+        colsum+=magicmatrix[j][i]
+    maxic=max(maxic,colsum)
 
-print(magicmatrix[0][0])
+
+
+print(maxi)
+print(maxic)
+
+
+# print(magicmatrix[0][0])
+def()
